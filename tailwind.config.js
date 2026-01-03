@@ -16,7 +16,7 @@ tailwind.config = {
             boxShadow: {
                 'soft': '0 4px 20px -2px rgba(0, 0, 0, 0.05)',
                 'hover': '0 10px 25px -5px rgba(37, 99, 235, 0.15)', // Blue tinted shadow
-            }
+            },
         }
     }
 }

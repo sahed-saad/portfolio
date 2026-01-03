@@ -15,8 +15,20 @@
 </head>
 <body class="bg-canvas-main light-mesh-bg">
 
+<div class="hidden 2xl:flex fixed left-2 top-0 bottom-0 flex-col justify-center z-50 pointer-events-none">
+    <div id="dynamic-icon-left" class="glass-icon-box w-56 h-56 rounded-[3rem] flex items-center justify-center pointer-events-auto animate-float-slow">
+        <img src="src/assets/float/aws.png" class="w-40 h-40 object-contain" alt="AWS">
+    </div>
+</div>
+
+<div class="hidden 2xl:flex fixed right-2 top-0 bottom-0 flex-col justify-center z-50 pointer-events-none">
+    <div id="dynamic-icon-right" class="glass-icon-box w-56 h-56 rounded-[3rem] flex items-center justify-center pointer-events-auto animate-float-reverse">
+        <img src="src/assets/float/jpmc.png" class="w-40 h-40 object-contain" alt="JPMC">
+    </div>
+</div>
+
     <nav class="fixed top-0 w-full bg-canvas-card/90 backdrop-blur-md border-b border-border-light z-50">
-        <div class="container mx-auto px-20 py-4">
+        <div class="container mx-auto px-12 py-4">
             <div class="grid grid-cols-3 items-center">
                 
                 <div class="hidden md:flex justify-start space-x-6 text-base font-bold">
@@ -78,7 +90,7 @@
         </div>
     </section>
 
-    <section id="about" class="py-20 bg-white border-y border-border-light">
+    <section id="about" class="py-12 bg-white border-y border-border-light">
         <div class="container mx-auto px-6">
             <div class="text-center mb-12">
                 <h2 class="text-3xl font-bold text-brand-dark">Technical Stack</h2>
@@ -110,46 +122,160 @@
         </div>
     </section>
 
-    <section id="portfolio" class="py-20">
+    <section id="experience" class="py-20 bg-canvas-main">
+    <div class="container mx-auto px-6 max-w-4xl">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl font-bold text-brand-dark">Experience</h2>
+            <div class="h-1 w-12 bg-brand-accent mx-auto mt-4 rounded-full"></div>
+        </div>
+
+        <div class="space-y-12">
+            <div class="relative flex flex-col md:flex-row gap-6 group">
+                <div class="flex-shrink-0 w-16 h-16 bg-white rounded-2xl shadow-soft border border-border-light flex items-center justify-center group-hover:border-brand-accent transition-colors duration-300">
+                    <i class="fas fa-building text-2xl text-slate-400 group-hover:text-brand-accent"></i>
+                </div>
+
+                <div class="flex-grow">
+                    <div class="flex flex-col md:flex-row md:justify-between md:items-start mb-4">
+                        <div>
+                            <h3 class="text-xl font-bold text-brand-dark">Software Engineering Intern</h3>
+                            <p class="text-brand-accent font-semibold">JPMorgan Chase & Co.</p>
+                        </div>
+                        <div class="mt-1 md:text-right">
+                            <span class="text-sm font-medium text-brand-gray bg-white px-3 py-1 rounded-full border border-border-light">Jul 2025 - Aug 2025</span>
+                            <p class="text-xs text-brand-gray mt-1"><i class="fas fa-map-marker-alt mr-1"></i> Jersey City, NJ</p>
+                        </div>
+                    </div>
+                    <ul class="space-y-3 text-brand-gray text-sm md:text-base leading-relaxed">
+                        <li class="flex gap-3">
+                            <span class="text-brand-accent mt-1.5 text-xs">●</span>
+                            <span>Implemented CRUD operations for an internal AI-powered software, improving user interaction and system seamlessness.</span>
+                        </li>
+                        <li class="flex gap-3">
+                            <span class="text-brand-accent mt-1.5 text-xs">●</span>
+                            <span>Structured MongoDB Atlas collections using PyMongo to enable efficient indexing for 5K+ records.</span>
+                        </li>
+                        <li class="flex gap-3">
+                            <span class="text-brand-accent mt-1.5 text-xs">●</span>
+                            <span>Built a concurrency-safe UID generator using MongoDB’s atomic-counter pattern, reducing failures by 40%.</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="relative flex flex-col md:flex-row gap-6 group">
+                <div class="flex-shrink-0 w-16 h-16 bg-white rounded-2xl shadow-soft border border-border-light flex items-center justify-center group-hover:border-brand-accent transition-colors duration-300">
+                    <i class="fas fa-chart-line text-2xl text-slate-400 group-hover:text-brand-accent"></i>
+                </div>
+                <div class="flex-grow">
+                    <div class="flex flex-col md:flex-row md:justify-between md:items-start mb-4">
+                        <div>
+                            <h3 class="text-xl font-bold text-brand-dark">Data Analysis Intern</h3>
+                            <p class="text-brand-accent font-semibold">The Office of the Bronx Borough President</p>
+                        </div>
+                        <div class="mt-1 md:text-right">
+                            <span class="text-sm font-medium text-brand-gray bg-white px-3 py-1 rounded-full border border-border-light">Jul 2024 - Aug 2024</span>
+                            <p class="text-xs text-brand-gray mt-1"><i class="fas fa-map-marker-alt mr-1"></i> Bronx, NY</p>
+                        </div>
+                    </div>
+                    <ul class="space-y-3 text-brand-gray text-sm md:text-base">
+                        <li class="flex gap-3">
+                            <span class="text-brand-accent mt-1.5 text-xs">●</span>
+                            <span>Analyzed 200+ survey responses using Excel PivotTables to improve community impact reporting accuracy.</span>
+                        </li>
+                        <li class="flex gap-3">
+                            <span class="text-brand-accent mt-1.5 text-xs">●</span>
+                            <span>Automated data templates with conditional formatting, reducing report time by 40%.</span>
+                        </li>
+                        <li class="flex gap-3">
+                            <span class="text-brand-accent mt-1.5 text-xs">●</span>
+                            <span>Collaborated with program staff to interpret data trends from 5+ public initiatives.</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="relative flex flex-col md:flex-row gap-6 group">
+                <div class="flex-shrink-0 w-16 h-16 bg-white rounded-2xl shadow-soft border border-border-light flex items-center justify-center group-hover:border-brand-accent transition-colors duration-300">
+                    <i class="fas fa-palette text-2xl text-slate-400 group-hover:text-brand-accent"></i>
+                </div>
+                <div class="flex-grow">
+                    <div class="flex flex-col md:flex-row md:justify-between md:items-start mb-4">
+                        <div>
+                            <h3 class="text-xl font-bold text-brand-dark">Web Developer / Designer</h3>
+                            <p class="text-brand-accent font-semibold">Art Defined</p>
+                        </div>
+                        <div class="mt-1 md:text-right">
+                            <span class="text-sm font-medium text-brand-gray bg-white px-3 py-1 rounded-full border border-border-light">Dates TBD</span>
+                            <p class="text-xs text-brand-gray mt-1"><i class="fas fa-map-marker-alt mr-1"></i> Location</p>
+                        </div>
+                    </div>
+                    <ul class="space-y-3 text-brand-gray text-sm md:text-base">
+                        <li class="flex gap-3">
+                            <span class="text-brand-accent mt-1.5 text-xs">●</span>
+                            <span>Placeholder bullet point for your specific achievements at Art Defined.</span>
+                        </li>
+                        <li class="flex gap-3">
+                            <span class="text-brand-accent mt-1.5 text-xs">●</span>
+                            <span>Developed responsive UI components using modern CSS frameworks to enhance user experience.</span>
+                        </li>
+                        <li class="flex gap-3">
+                            <span class="text-brand-accent mt-1.5 text-xs">●</span>
+                            <span>Worked closely with the creative team to translate design wireframes into functional code.</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <section id="portfolio" class="py-12">
         <div class="container mx-auto px-6">
             <div class="flex justify-between items-end mb-12 max-w-5xl mx-auto">
                 <div>
                     <h2 class="text-3xl font-bold text-brand-dark">Projects</h2>
                 </div>
-                <a href="#" class="hidden md:block text-brand-accent font-semibold hover:underline">View Github -></a>
+                <a href="https://github.com/sahed-saad" class="hidden md:block text-brand-accent font-semibold hover:underline">View Github -></a>
             </div>
 
             <div class="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
                 <div class="project-card bg-white rounded-2xl overflow-hidden shadow-soft group">
                     <div class="h-48 bg-gray-100 flex items-center justify-center group-hover:bg-blue-50 transition">
-                        <i class="fas fa-laptop-code text-4xl text-gray-300 group-hover:text-brand-accent transition"></i>
+                        <img src="src/assets/cd-blocker.png" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"></img>
                     </div>
                     <div class="p-8">
-                        <div class="text-xs font-bold text-brand-accent uppercase tracking-wide mb-2">E-Commerce</div>
-                        <h3 class="text-2xl font-bold text-brand-dark mb-3">Minimal Shop</h3>
+                        <div class="text-xs font-bold text-brand-accent uppercase tracking-wide mb-2">Hackathon Winner: Creative Expression</div>
+                        <h3 class="text-2xl font-bold text-brand-dark mb-3"><a href="https://github.com/sahed-saad/cd-blocker">CD Blocker</a></h3>
                         <p class="text-brand-gray mb-6 leading-relaxed">
-                            A clean, headless e-commerce storefront focusing on performance and conversion rates.
+                            Real-time credit card or sensitive information detection and blurring for live streamers.
                         </p>
                         <div class="flex gap-2">
-                            <span class="px-3 py-1 bg-gray-100 text-xs font-medium rounded-full text-brand-dark">Next.js</span>
-                            <span class="px-3 py-1 bg-gray-100 text-xs font-medium rounded-full text-brand-dark">Stripe</span>
+                            <span class="px-3 py-1 bg-gray-100 text-xs font-medium rounded-full text-brand-dark">Python</span>
+                            <span class="px-3 py-1 bg-gray-100 text-xs font-medium rounded-full text-brand-dark">OpenCV</span>
+                            <span class="px-3 py-1 bg-gray-100 text-xs font-medium rounded-full text-brand-dark">Google Cloud API</span>
+                            <span class="px-3 py-1 bg-gray-100 text-xs font-medium rounded-full text-brand-dark">OpenCV</span>
+                            <span class="px-3 py-1 bg-gray-100 text-xs font-medium rounded-full text-brand-dark">Computer Vision</span>
                         </div>
                     </div>
                 </div>
 
                 <div class="project-card bg-white rounded-2xl overflow-hidden shadow-soft group">
                     <div class="h-48 bg-gray-100 flex items-center justify-center group-hover:bg-blue-50 transition">
-                        <i class="fas fa-chart-pie text-4xl text-gray-300 group-hover:text-brand-accent transition"></i>
+                        <img src="src/assets/3d-renderer.png" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"></img>
                     </div>
                     <div class="p-8">
-                        <div class="text-xs font-bold text-brand-accent uppercase tracking-wide mb-2">SaaS Dashboard</div>
-                        <h3 class="text-2xl font-bold text-brand-dark mb-3">Analytics Pro</h3>
+                        <div class="text-xs font-bold text-brand-accent uppercase tracking-wide mb-2">Interactive Visual Renderer</div>
+                        <h3 class="text-2xl font-bold text-brand-dark mb-3">3D Renderer</h3>
                         <p class="text-brand-gray mb-6 leading-relaxed">
-                            Real-time data visualization platform for tracking social media metrics and ROI.
+                            A custom 3D rendering engine in C++ using SDL2 for graphics and ImGui for the user interface.
                         </p>
                         <div class="flex gap-2">
-                            <span class="px-3 py-1 bg-gray-100 text-xs font-medium rounded-full text-brand-dark">React</span>
-                            <span class="px-3 py-1 bg-gray-100 text-xs font-medium rounded-full text-brand-dark">D3.js</span>
+                            <span class="px-3 py-1 bg-gray-100 text-xs font-medium rounded-full text-brand-dark">C++</span>
+                            <span class="px-3 py-1 bg-gray-100 text-xs font-medium rounded-full text-brand-dark">SDL2</span>
+                            <span class="px-3 py-1 bg-gray-100 text-xs font-medium rounded-full text-brand-dark">Imgui</span>
+                            <span class="px-3 py-1 bg-gray-100 text-xs font-medium rounded-full text-brand-dark">Object Rotation</span>
+                            <span class="px-3 py-1 bg-gray-100 text-xs font-medium rounded-full text-brand-dark">3D Coordinates</span>
                         </div>
                     </div>
                 </div>
@@ -177,7 +303,7 @@
                     <i class="fab fa-twitter"></i>
                 </a>
             </div>
-            <p class="text-sm text-gray-400">&copy; 2024 Sahed Saad.</p>
+            <p class="text-sm text-gray-400">&copy; 2026 Sahed Saad.</p>
         </div>
     </footer>
 
