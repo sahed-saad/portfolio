@@ -97,20 +97,44 @@
 
 <section id="home" class="min-h-screen flex items-start justify-center pt-12 px-6 bg-blue-100">
     <div class="container mx-auto max-w-5xl mt-16">
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
             
-            <div class="space-y-6 z-10 relative">
+            <div class="flex justify-center order-1 lg:order-2 py-0">
+                <div class="relative w-full max-w-[650px] h-auto md:h-[550px] flex flex-col items-center space-y-4 md:space-y-0">
+                    
+                    <!-- Top Circle -->
+                    <div class="relative z-12 w-64 h-64 md:w-72 md:h-72 rounded-full overflow-hidden border-4 border-slate-800 shadow-2xl hover:scale-105 transition-transform duration-300">
+                        <img src="src/assets/sahed.png" class="w-full h-full object-cover" alt="Sahed Saad - Professional portrait" loading="lazy">
+                    </div>
+                    
+                    <!-- Bottom Circles Container -->
+                    <div class="flex flex-row justify-between w-full max-w-[500px]">
+                        <!-- Bottom Left Circle -->
+                        <div class="relative z-20 w-48 h-48 md:w-72 md:h-72 rounded-full overflow-hidden border-4 border-slate-800 shadow-2xl hover:scale-105 transition-transform duration-300">
+                            <img src="src/assets/saad.jpg" class="w-full h-full object-cover" alt="Sahed Saad at work" loading="lazy">
+                        </div>
+                        
+                        <!-- Bottom Right Circle (updated to a better local image or use one of these online suggestions below) -->
+                        <div class="relative z-5 w-48 h-48 md:w-72 md:h-72 rounded-full overflow-hidden border-4 border-slate-800 shadow-2xl hover:scale-105 transition-transform duration-300">
+                            <img src="src/assets/desk.jpg" class="w-full h-full object-cover" alt="Developer workspace with coding setup" loading="lazy">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Text Column - Appears SECOND on mobile -->
+            <div class="space-y-6 z-10 relative text-center lg:text-left order-2 lg:order-1">
                 <h1 class="text-5xl md:text-7xl font-extrabold text-gray-900 leading-tight">
                     Sahed Saad
                 </h1>
                
                 <p class="text-lg md:text-xl text-gray-700 leading-relaxed">
-    Hey! I'm Sahed Saad, a student at the City College of New York, who just wrapped a Software Engineering internship at JPMorgan Chase. 
-    I love building impactful tech!<br><br>
-    I'm a fast learner with a growth mindset, thriving in collaborative teams where I communicate clearly, adapt quickly, and turn ideas into reality. Excited to bring my energy and skills to your next project!
-            </p>
+                    Hey! I'm Sahed Saad, a student at the City College of New York, who just wrapped a Software Engineering internship at JPMorgan Chase. 
+                    I love building impactful tech!<br><br>
+                    I'm a fast learner with a growth mindset, thriving in collaborative teams where I communicate clearly, adapt quickly, and turn ideas into reality. Excited to bring my energy and skills to your next project!
+                </p>
                 
-                <div class="flex gap-4 pt-4">
+                <div class="flex flex-col sm:flex-row gap-4 pt-4 justify-center lg:justify-start">
                     <a href="#portfolio" class="px-8 py-3 bg-gray-900 text-white rounded-full font-medium hover:bg-purple-600 transition shadow-lg">
                         View Projects
                     </a>
@@ -119,31 +143,6 @@
                     </a>
                 </div>
             </div>
-            
-            
-<div class="flex justify-center lg:justify-end py-0">
-    <div class="relative w-full max-w-[650px] h-auto md:h-[550px] flex flex-col items-center space-y-4 md:space-y-0">
-        
-        <!-- Top Circle -->
-        <div class="relative z-12 w-64 h-64 md:w-72 md:h-72 rounded-full overflow-hidden border-4 border-slate-800 shadow-2xl hover:scale-105 transition-transform duration-300">
-            <img src="src/assets/sahed.png" class="w-full h-full object-cover" alt="Sahed Saad - Professional portrait" loading="lazy">
-        </div>
-        
-        <!-- Bottom Circles Container -->
-        <div class="flex flex-row justify-between w-full max-w-[500px]">
-            <!-- Bottom Left Circle -->
-            <div class="relative z-20 w-48 h-48 md:w-72 md:h-72 rounded-full overflow-hidden border-4 border-slate-800 shadow-2xl hover:scale-105 transition-transform duration-300">
-                <img src="src/assets/saad.jpg" class="w-full h-full object-cover" alt="Sahed Saad at work" loading="lazy">
-            </div>
-            
-            <!-- Bottom Right Circle -->
-            <div class="relative z-5 w-48 h-48 md:w-72 md:h-72 rounded-full overflow-hidden border-4 border-slate-800 shadow-2xl hover:scale-105 transition-transform duration-300">
-                <img src="src/assets/desk.jpg" class="w-full h-full object-cover" alt="Creative coding passion" loading="lazy">
-            </div>
-        </div>
-
-    </div>
-</div>
             
         </div>
     </div>
