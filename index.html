@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Saad's Portfolio</title>
+
+    <link rel="icon" type="image/jpeg" href="src/assets/sahed.png">
     
     <script src="https://cdn.tailwindcss.com"></script>
-
-        <script src="https://cdn.tailwindcss.com"></script>
 
     <script>
     tailwind.config = {
@@ -35,24 +35,21 @@
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body class="bg-canvas-main light-mesh-bg">
-
 <div class="hidden 2xl:flex fixed left-2 top-0 bottom-0 flex-col justify-center z-50 pointer-events-none">
     <div id="dynamic-icon-left" class="glass-icon-box w-56 h-56 rounded-[3rem] flex items-center justify-center pointer-events-auto animate-float-slow">
-        <img src="src/assets/float/aws.svg" class="w-40 h-40 object-contain" alt="AWS">
     </div>
 </div>
 
 <div class="hidden 2xl:flex fixed right-2 top-0 bottom-0 flex-col justify-center z-50 pointer-events-none">
     <div id="dynamic-icon-right" class="glass-icon-box w-56 h-56 rounded-[3rem] flex items-center justify-center pointer-events-auto animate-float-reverse">
-        <img src="src/assets/float/python.png" class="w-40 h-40 object-contain" alt="JPMC">
     </div>
 </div>
 
 <nav class="fixed top-0 w-full bg-canvas-card/90 backdrop-blur-md border-b border-border-light z-50">
-    <div class="container mx-auto px-12 py-4">
+    <div class="container mx-auto px-6 py-4">
         <div class="flex items-center justify-between">
             
             <!-- Logo on the left -->
@@ -88,6 +85,7 @@
         <div id="mobile-menu" class="hidden md:hidden mt-4 pb-4">
             <div class="flex flex-col space-y-4">
                 <a href="#home" class="text-brand-dark hover:text-brand-accent transition">Home</a>
+                <a href="#education" class="text-brand-dark hover:text-brand-accent transition">Education</a>
                 <a href="#experience" class="text-brand-dark hover:text-brand-accent transition">Experience</a>
                 <a href="#certifications" class="text-brand-dark hover:text-brand-accent transition">Certifications</a>
                 <a href="#portfolio" class="text-brand-dark hover:text-brand-accent transition">Projects</a>
@@ -107,9 +105,10 @@
                 </h1>
                
                 <p class="text-lg md:text-xl text-gray-700 leading-relaxed">
-                    A passionate individual who always thrives to work on end to end products 
-                    which develop sustainable and scalable social and technical systems to create impact.
-                </p>
+    Hey! I'm Sahed Saad, a student at the City College of New York, who just wrapped a Software Engineering internship at JPMorgan Chase. 
+    I love building impactful tech!<br><br>
+    I'm a fast learner with a growth mindset, thriving in collaborative teams where I communicate clearly, adapt quickly, and turn ideas into reality. Excited to bring my energy and skills to your next project!
+            </p>
                 
                 <div class="flex gap-4 pt-4">
                     <a href="#portfolio" class="px-8 py-3 bg-gray-900 text-white rounded-full font-medium hover:bg-purple-600 transition shadow-lg">
@@ -123,21 +122,24 @@
             
             
 <div class="flex justify-center lg:justify-end py-0">
-    <div class="relative w-[650px] h-[550px]">
+    <div class="relative w-full max-w-[650px] h-auto md:h-[550px] flex flex-col items-center space-y-4 md:space-y-0">
         
         <!-- Top Circle -->
-        <div class="absolute top-0 left-1/2 -translate-x-1/2 z-12 w-72 h-72 rounded-full overflow-hidden border-4 border-slate-800 shadow-2xl hover:scale-105 transition-transform duration-300">
-            <img src="src\assets\sahed.png" class="w-full h-full object-cover" alt="Profile">
+        <div class="relative z-12 w-64 h-64 md:w-72 md:h-72 rounded-full overflow-hidden border-4 border-slate-800 shadow-2xl hover:scale-105 transition-transform duration-300">
+            <img src="src/assets/sahed.png" class="w-full h-full object-cover" alt="Sahed Saad - Professional portrait" loading="lazy">
         </div>
         
-        <!-- Bottom Left Circle -->
-        <div class="absolute bottom-0 left-0 z-20 w-72 h-72 rounded-full overflow-hidden border-4 border-slate-800 shadow-2xl hover:scale-105 transition-transform duration-300">
-            <img src="src\assets\saad.jpg" class="w-full h-full object-cover" alt="Work">
-        </div>
-        
-        <!-- Bottom Right Circle -->
-        <div class="absolute bottom-0 right-0 z-5 w-72 h-72 rounded-full overflow-hidden border-4 border-slate-800 shadow-2xl hover:scale-105 transition-transform duration-300">
-            <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=600&h=600&fit=crop" class="w-full h-full object-cover" alt="Passion">
+        <!-- Bottom Circles Container -->
+        <div class="flex flex-row justify-between w-full max-w-[500px]">
+            <!-- Bottom Left Circle -->
+            <div class="relative z-20 w-48 h-48 md:w-72 md:h-72 rounded-full overflow-hidden border-4 border-slate-800 shadow-2xl hover:scale-105 transition-transform duration-300">
+                <img src="src/assets/saad.jpg" class="w-full h-full object-cover" alt="Sahed Saad at work" loading="lazy">
+            </div>
+            
+            <!-- Bottom Right Circle -->
+            <div class="relative z-5 w-48 h-48 md:w-72 md:h-72 rounded-full overflow-hidden border-4 border-slate-800 shadow-2xl hover:scale-105 transition-transform duration-300">
+                <img src="src/assets/desk.jpg" class="w-full h-full object-cover" alt="Creative coding passion" loading="lazy">
+            </div>
         </div>
 
     </div>
@@ -156,10 +158,10 @@
         </div>
 
         <div class="space-y-8">
-            <!-- Education Entry -->
+            
             <div class="relative flex flex-col md:flex-row gap-6 group">
                 <div class="flex-shrink-0 w-48 h-32 bg-white rounded-2xl shadow-soft border border-border-light flex items-center justify-center group-hover:border-brand-accent transition-colors duration-300 p-4">
-                    <img src="src/assets/ccny.png" class="w-full h-full object-contain" alt="College Logo">
+                    <img src="src/assets/ccny.png" class="w-full h-full object-contain" alt="College Logo" loading="lazy">
                 </div>
 
                 <div class="flex-grow">
@@ -193,17 +195,17 @@ Systems Fundamentals, Calculus, Statistics and Probability, <b>CodePath TIP 102 
     </div>
 </section>
 
-<section id="experience" class="py-3 bg-blue-100">
-    <div class="container mx-auto px-1/2 max-w-4xl">
+<section id="experience" class="py-12 bg-blue-100">
+    <div class="container mx-auto px-6 max-w-4xl">
         <div class="text-center mb-16">
             <h2 class="text-3xl font-bold text-brand-dark">Experience</h2>
             <div class="h-1 w-12 bg-brand-accent mx-auto mt-4 rounded-full"></div>
         </div>
 
-        <div class="space-y-5">
+        <div class="space-y-8">
             <div class="relative flex flex-col md:flex-row gap-6 group">
                 <div class="flex-shrink-0 w-32 h-32 bg-white rounded-2xl shadow-soft border border-border-light flex items-center justify-center group-hover:border-brand-accent transition-colors duration-300 p-4">
-                    <img src="src/assets/float/jpmc.png" class="w-full h-full object-contain" alt="JPMC">
+                    <img src="src/assets/float/jpmc.png" class="w-full h-full object-contain" alt="JPMC Logo" loading="lazy">
                 </div>
 
                 <div class="flex-grow">
@@ -236,7 +238,7 @@ Systems Fundamentals, Calculus, Statistics and Probability, <b>CodePath TIP 102 
 
             <div class="relative flex flex-col md:flex-row gap-6 group">
                 <div class="flex-shrink-0 w-32 h-32 bg-white rounded-2xl shadow-soft border border-border-light flex items-center justify-center group-hover:border-brand-accent transition-colors duration-300">
-                    <img src="src/assets/bxpo.png" class="w-full h-full object-contain" alt="JPMC">
+                    <img src="src/assets/bxpo.png" class="w-full h-full object-contain" alt="Bronx Borough President Logo" loading="lazy">
                 </div>
                 <div class="flex-grow">
                     <div class="flex flex-col md:flex-row md:justify-between md:items-start mb-4">
@@ -268,7 +270,7 @@ Systems Fundamentals, Calculus, Statistics and Probability, <b>CodePath TIP 102 
 
             <div class="relative flex flex-col md:flex-row gap-6 group">
                 <div class="flex-shrink-0 w-32 h-32 bg-white rounded-2xl shadow-soft border border-border-light flex items-center justify-center group-hover:border-brand-accent transition-colors duration-300">
-                    <img src="src/assets/adp.jpg" class="w-full h-full object-contain" alt="JPMC">
+                    <img src="src/assets/adp.jpg" class="w-full h-full object-contain" alt="Art Defined Productions Logo" loading="lazy">
                 </div>
                 <div class="flex-grow">
                     <div class="flex flex-col md:flex-row md:justify-between md:items-start mb-4">
@@ -303,7 +305,7 @@ Systems Fundamentals, Calculus, Statistics and Probability, <b>CodePath TIP 102 
             <div>
                 <h2 class="text-3xl font-bold text-brand-dark">Projects</h2>
             </div>
-            <a href="https://github.com/sahed-saad" class="hidden md:block text-brand-accent font-semibold hover:underline">View Github -></a>
+            <a href="https://github.com/sahed-saad" target="_blank" rel="noopener noreferrer" class="hidden md:block text-brand-accent font-semibold hover:underline">View Github -></a>
         </div>
 
        <div class="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
@@ -316,7 +318,7 @@ Systems Fundamentals, Calculus, Statistics and Probability, <b>CodePath TIP 102 
         </div>
         
         <div class="h-52 overflow-hidden relative">
-            <img src="src/assets/cd-blocker.png" class="w-full h-full object-cover" alt="CD Blocker - Hackathon Winner">
+            <img src="src/assets/cd-blocker.png" class="w-full h-full object-cover" alt="CD Blocker Project" loading="lazy">
             <a href="https://github.com/sahed-saad/cd-blocker" target="_blank" rel="noopener noreferrer" class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
                 <span class="text-white font-bold border-2 border-white px-4 py-2 rounded-full">View Repo</span>
             </a>
@@ -351,15 +353,15 @@ Systems Fundamentals, Calculus, Statistics and Probability, <b>CodePath TIP 102 
     </div>
             <div class="project-card bg-white rounded-2xl overflow-hidden border border-gray-100 group">
                 <div class="h-52 overflow-hidden relative">
-                    <img src="src/assets/3d-renderer.png" class="w-full h-full object-cover" alt="3D Renderer">
-                    <a href="https://github.com/sahed-saad/3D_renderer" class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                    <img src="src/assets/3d-renderer.png" class="w-full h-full object-cover" alt="3D Renderer Project" loading="lazy">
+                    <a href="https://github.com/sahed-saad/3D_renderer" target="_blank" rel="noopener noreferrer" class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
                         <span class="text-white font-bold border border-white px-4 py-2 rounded-full">View Repo</span>
                     </a>
                 </div>
                 <div class="p-8">
                     <div class="text-xs font-bold text-brand-accent uppercase tracking-wide mb-2">Interactive Visual Renderer</div>
                     <h3 class="text-2xl font-bold text-brand-dark mb-3">
-                        <a href="https://github.com/sahed-saad/3D_renderer" class="hover:text-brand-accent transition">3D Renderer</a>
+                        <a href="https://github.com/sahed-saad/3D_renderer" target="_blank" rel="noopener noreferrer" class="hover:text-brand-accent transition">3D Renderer</a>
                     </h3>
                     <p class="text-brand-gray mb-6 leading-relaxed">A custom 3D rendering engine in C++ using SDL2 for graphics and ImGui.</p>
                     <div class="flex gap-2">
@@ -371,15 +373,15 @@ Systems Fundamentals, Calculus, Statistics and Probability, <b>CodePath TIP 102 
 
             <div class="project-card bg-white rounded-2xl overflow-hidden border border-gray-100 group">
                 <div class="h-52 overflow-hidden relative">
-                    <img src="src/assets/cipher.png" alt="Project 3" class="w-full h-full object-cover">
-                    <a href="https://github.com/sahed-saad/decrypt-encrypt-midterm" class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                    <img src="src/assets/cipher.png" alt="Vigenère Cipher Project" class="w-full h-full object-cover" loading="lazy">
+                    <a href="https://github.com/sahed-saad/decrypt-encrypt-midterm" target="_blank" rel="noopener noreferrer" class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
                         <span class="text-white font-bold border border-white px-4 py-2 rounded-full">View Repo</span>
                     </a>
                 </div>
                 <div class="p-8">
                     <div class="text-xs font-bold text-brand-accent uppercase tracking-wide mb-2">Decryption and Encryption</div>
                     <h3 class="text-2xl font-bold text-brand-dark mb-3">
-                        <a href="https://github.com/sahed-saad/decrypt-encrypt-midterm" class="hover:text-brand-accent transition">Vigenère Cipher Shift</a>
+                        <a href="https://github.com/sahed-saad/decrypt-encrypt-midterm" target="_blank" rel="noopener noreferrer" class="hover:text-brand-accent transition">Vigenère Cipher Shift</a>
                     </h3>
                     <p class="text-brand-gray mb-6 leading-relaxed">A C++ program that breaks Vigenère codes and uses a custom-made encryption system.</p>
                     <div class="flex gap-2">
@@ -391,15 +393,15 @@ Systems Fundamentals, Calculus, Statistics and Probability, <b>CodePath TIP 102 
 
             <div class="project-card bg-white rounded-2xl overflow-hidden border border-gray-100 group">
                 <div class="h-52 overflow-hidden relative">
-                    <img src="src/assets/snake.png" alt="Project 4" class="w-full h-full object-cover">
-                    <a href="https://github.com/sahed-saad/classic-snake" class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                    <img src="src/assets/snake.png" alt="Classic Snake Project" class="w-full h-full object-cover" loading="lazy">
+                    <a href="https://github.com/sahed-saad/classic-snake" target="_blank" rel="noopener noreferrer" class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
                         <span class="text-white font-bold border border-white px-4 py-2 rounded-full">View Repo</span>
                     </a>
                 </div>
                 <div class="p-8">
                     <div class="text-xs font-bold text-brand-accent uppercase tracking-wide mb-2">Python Games</div>
                     <h3 class="text-2xl font-bold text-brand-dark mb-3">
-                        <a href="https://github.com/sahed-saad/classic-snake" class="hover:text-brand-accent transition">Classic Snake</a>
+                        <a href="https://github.com/sahed-saad/classic-snake" target="_blank" rel="noopener noreferrer" class="hover:text-brand-accent transition">Classic Snake</a>
                     </h3>
                     <p class="text-brand-gray mb-6 leading-relaxed">A beginner-friendly implementation of the classic Snake game using Python's turtle module.</p>
                     <div class="flex gap-2">
@@ -411,7 +413,7 @@ Systems Fundamentals, Calculus, Statistics and Probability, <b>CodePath TIP 102 
         </div>
 
         <div class="text-center mt-8 md:hidden">
-            <a href="https://github.com/sahed-saad" class="text-brand-accent font-semibold hover:underline">View Github -></a>
+            <a href="https://github.com/sahed-saad" target="_blank" rel="noopener noreferrer" class="text-brand-accent font-semibold hover:underline">View Github -></a>
         </div>
     </div>
 </section>
@@ -430,7 +432,7 @@ Systems Fundamentals, Calculus, Statistics and Probability, <b>CodePath TIP 102 
             <a href="https://www.credly.com/badges/c9d8d9c9-470a-44cf-bbb0-35a308e3f261/public_url" target="_blank" rel="noopener noreferrer" class="bg-canvas-main rounded-2xl p-6 border border-border-light hover:border-brand-accent transition-all duration-300 hover:shadow-soft group block">
                 <div class="flex items-start gap-4">
                     <div class="flex-shrink-0 w-16 h-16 bg-white rounded-xl flex items-center justify-center border border-border-light group-hover:border-brand-accent transition-colors overflow-hidden">
-                        <img class="flex-shrink-0" src="src/assets/float/aws.svg" alt="AWS Certification" class="w-full h-full object-cover">
+                        <img class="flex-shrink-0" src="src/assets/float/aws.svg" alt="AWS Certification Badge" class="w-full h-full object-cover" loading="lazy">
                     </div>
                     <div class="flex-grow">
                         <h3 class="text-lg font-bold text-brand-dark mb-1 group-hover:text-brand-accent transition">AWS Certified Cloud Practitioner</h3>
@@ -444,7 +446,7 @@ Systems Fundamentals, Calculus, Statistics and Probability, <b>CodePath TIP 102 
             <a href="https://certification.w3schools.com/w3certified.asp?id=14028827" target="_blank" rel="noopener noreferrer" class="bg-canvas-main rounded-2xl p-6 border border-border-light hover:border-brand-accent transition-all duration-300 hover:shadow-soft group block">
                 <div class="flex items-start gap-4">
                     <div class="flex-shrink-0 w-16 h-16 bg-white rounded-xl flex items-center justify-center border border-border-light group-hover:border-brand-accent transition-colors overflow-hidden">
-                        <img src="src/assets/float/html.png" alt="HTML Certification" class="w-full h-full object-cover">
+                        <img src="src/assets/float/html.png" alt="HTML Certification Badge" class="w-full h-full object-cover" loading="lazy">
                     </div>
                     <div class="flex-grow">
                         <h3 class="text-lg font-bold text-brand-dark mb-1 group-hover:text-brand-accent transition">Certified HTML Developer</h3>
@@ -458,7 +460,7 @@ Systems Fundamentals, Calculus, Statistics and Probability, <b>CodePath TIP 102 
             <a href="https://certification.w3schools.com/w3certified.asp?id=14065327" target="_blank" rel="noopener noreferrer" class="bg-canvas-main rounded-2xl p-6 border border-border-light hover:border-brand-accent transition-all duration-300 hover:shadow-soft group block">
                 <div class="flex items-start gap-4">
                     <div class="flex-shrink-0 w-16 h-16 bg-white rounded-xl flex items-center justify-center border border-border-light group-hover:border-brand-accent transition-colors overflow-hidden">
-                        <img src="src/assets/float/css.png" alt="MongoDB Certification" class="w-full h-full object-cover">
+                        <img src="src/assets/float/css.png" alt="CSS Certification Badge" class="w-full h-full object-cover" loading="lazy">
                     </div>
                     <div class="flex-grow">
                         <h3 class="text-lg font-bold text-brand-dark mb-1 group-hover:text-brand-accent transition">Certified CSS Developer</h3>
@@ -472,7 +474,7 @@ Systems Fundamentals, Calculus, Statistics and Probability, <b>CodePath TIP 102 
             <a href="https://www.credly.com/badges/6f5079f1-0c6f-43ce-8570-447d64e9fed0/public_url" target="_blank" rel="noopener noreferrer" class="bg-canvas-main rounded-2xl p-6 border border-border-light hover:border-brand-accent transition-all duration-300 hover:shadow-soft group block">
                 <div class="flex items-start gap-4">
                     <div class="flex-shrink-0 w-16 h-16 bg-white rounded-xl flex items-center justify-center border border-border-light group-hover:border-brand-accent transition-colors overflow-hidden">
-                        <img src="src/assets/float/aws-genai.png" alt="CompTIA Certification" class="w-full h-full object-cover">
+                        <img src="src/assets/float/aws-genai.png" alt="AWS GenAI Certification Badge" class="w-full h-full object-cover" loading="lazy">
                     </div>
                     <div class="flex-grow">
                         <h3 class="text-lg font-bold text-brand-dark mb-1 group-hover:text-brand-accent transition">AWS Intro to Generative AI</h3>
@@ -490,10 +492,10 @@ Systems Fundamentals, Calculus, Statistics and Probability, <b>CodePath TIP 102 
             <h2 class="text-2xl font-bold text-brand-dark mb-6">Let's Connect!</h2>
             
             <div class="flex justify-center gap-6 mb-8">
-                <a href="https://www.github.com/sahed-saad" class="w-10 h-10 flex items-center justify-center rounded-full bg-canvas-main hover:bg-brand-accent hover:text-white transition text-brand-dark">
+                <a href="https://www.github.com/sahed-saad" target="_blank" rel="noopener noreferrer" class="w-10 h-10 flex items-center justify-center rounded-full bg-canvas-main hover:bg-brand-accent hover:text-white transition text-brand-dark">
                     <i class="fab fa-github"></i>
                 </a>
-                <a href="https://www.linkedin.com/in/sahed-saad/" class="w-10 h-10 flex items-center justify-center rounded-full bg-canvas-main hover:bg-brand-accent hover:text-white transition text-brand-dark">
+                <a href="https://www.linkedin.com/in/sahed-saad/" target="_blank" rel="noopener noreferrer" class="w-10 h-10 flex items-center justify-center rounded-full bg-canvas-main hover:bg-brand-accent hover:text-white transition text-brand-dark">
                     <i class="fab fa-linkedin-in"></i>
                 </a>
                 <a href="mailto:sahed.saad@outlook.com" class="w-10 h-10 flex items-center justify-center rounded-full bg-canvas-main hover:bg-brand-accent hover:text-white transition text-brand-dark">
