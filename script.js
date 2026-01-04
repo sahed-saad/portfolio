@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const rightBox = document.getElementById('dynamic-icon-right');
 
     // Your specific file list
-    const myImages = ['aws.png', 'html.png', 'css.png', 'jpmc.png'];
+    const myImages = ['aws.svg', 'html.png', 'css.png', 'python.png'];
 
     // Track the last section to prevent double-triggering the same animation
     let lastSection = "";
