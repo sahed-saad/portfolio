@@ -35,18 +35,18 @@ html {
     scroll-behavior: smooth;
 }
 
+@keyframes float-y {
+    0%, 100% { transform: translate3d(0, 0, 0); }
+    50% { transform: translate3d(0, -15px, 0); }
+}
+
 .glass-icon-box {
-    /* ... your existing glass styles ... */
     display: flex;
     align-items: center;
     justify-center;
     transition: opacity 0.3s ease, background 0.3s ease;
-    will-change: transform, opacity;
-}
-
-@keyframes float-y {
-    0%, 100% { translate: 0 0; }
-    50% { translate: 0 -15px; }
+    will-change: transform;
+    backface-visibility: hidden;
 }
 
 .animate-float-slow, .animate-float-reverse {
