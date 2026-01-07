@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let lastSection = "";
 
     const observerOptions = {
-        threshold: 0.2,
+        threshold: 0.1,
         rootMargin: "-10% 0px -10% 0px"
     };
 
@@ -55,7 +55,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const s = starts[Math.floor(Math.random() * starts.length)];
 
         element.style.opacity = '0';
-        element.style.transform = 'scale(0.5) rotate(0deg)';
+        element.style.transform = 'scale() rotate(0deg)';
 
         setTimeout(() => {
 
@@ -75,4 +75,14 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     document.querySelectorAll('section').forEach(sec => observer.observe(sec));
+    const sections = document.querySelectorAll('section');
+const scrollObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('scrolled');
+        }
+    });
+}, { threshold: 0.15 });
+
+sections.forEach(sec => scrollObserver.observe(sec));
 });
