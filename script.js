@@ -71,6 +71,12 @@ document.addEventListener('DOMContentLoaded', () => {
             });
 
             element.style.transform = `scale(${randomScale}) rotate(${randomRotate}deg)`;
+
+            element.classList.add('pulse');
+            setTimeout(() => {
+                element.classList.remove('pulse');
+        }, 1500);
+
         }, 250);
     }
 
